@@ -1,14 +1,5 @@
-You're looking for a consolidated comparison of the mini PCs we've discussed. This table summarizes their key aspects, focusing on their configuration, general advantages/disadvantages, and their suitability for local AI tasks and other purposes.
 
-**Important Note on "Local AI Capabilities":**
-* **NPU (Neural Processing Unit):** Dedicated hardware for AI tasks, offering high efficiency for specific workloads like background blur, noise cancellation, and accelerating AI frameworks that leverage it (e.g., OpenVINO, Windows Studio Effects). Measured in TOPS (Tera Operations Per Second).
-* **Integrated GPU (iGPU):** Crucial for offloading layers of Large Language Models (LLMs) and for image generation (e.g., Stable Diffusion). Performance varies greatly by model.
-* **CPU:** Can run LLMs entirely, especially smaller ones or quantized versions, but generally slower than leveraging an iGPU or NPU where applicable.
-* **RAM:** Essential for loading LLM models into memory. More RAM allows for larger models and better iGPU performance (as iGPUs use system RAM as VRAM).
-
----
-
-### Mini PC Comparison Table
+## Mini PC Comparison Table
 
 | Model                     | Configuration (CPU/GPU/RAM/SSD)                                   | Advantages                                                         | Disadvantages                                                        | Local AI Capabilities                                                                     | Other Purposes & Capabilities                                                                                                                                                                                                                                                                                         |
 | :------------------------ | :---------------------------------------------------------------- | :----------------------------------------------------------------- | :------------------------------------------------------------------- | :------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -20,3 +11,13 @@ You're looking for a consolidated comparison of the mini PCs we've discussed. Th
 | **Minisforum AI X1** | AMD Ryzen 7 260 / 255 (Ryzen AI 300 Series), Radeon 890M / 880M, 32GB DDR5, NVMe Gen4 SSD | Next-gen AMD APU, **highly powerful NPU (50 TOPS)**, very strong Radeon 890M iGPU, compact. | Newer platform (may have initial driver quirks), potentially higher price point. | **Outstanding (CPU/iGPU/NPU).** Zen 5 CPU, **3rd Gen XDNA 2 NPU (up to 50 TOPS) is a game-changer for AI**, next-gen Radeon 890M is top-tier for iGPU AI acceleration. | Cutting-edge AI workloads (Copilot+ features, advanced LLMs), demanding gaming, high-performance content creation, future-proof AI development.                                                                                                                                                                |
 | **GEEKOM IT1 Mega AI PC** | Intel Core Ultra 9 185H (16C/22T), Intel Arc Graphics, 32GB DDR5, 2TB NVMe Gen4 SSD | First Gen Intel NPU (AI Boost), strong Intel Arc Graphics, good CPU performance, ample RAM/SSD. | NPU (11 TOPS) is 1st Gen, Arc Graphics are good but slightly behind newer Arc/Radeon iGPUs in some benchmarks. | **Very Good (CPU/iGPU/NPU).** Strong CPU for LLMs. **Arc Graphics are good for LLM offloading & image generation.** Dedicated NPU for efficient AI tasks (11 TOPS). | High-end productivity, coding, moderate content creation, light to moderate gaming, AI development/experimentation, media center.                                                                                                                                                                           |
 | **GEEKOM IT15 AI Mini PC**| Intel Core Ultra 9 285H (16C/16/22T), Intel Arc 140T GPU, 32GB DDR5, 2TB NVMe Gen4 SSD | **Latest Intel CPU/iGPU/NPU**, higher CPU performance, more powerful Arc 140T GPU, enhanced AI capabilities. | Likely highest price point among these options, specific thread count on 285H may vary depending on implementation. | **Excellent (CPU/iGPU/NPU).** More powerful CPU than 185H. **Enhanced Arc 140T GPU is top-tier for iGPU AI acceleration.** NPU (13 TOPS) offers improved AI efficiency. Overall highest Intel platform TOPS. | Cutting-edge AI workloads, demanding gaming, high-performance content creation, future-proof AI development, virtual machines.                                                                                                                                                                                     |
+
+
+
+**Important Note on "Local AI Capabilities":**
+* **NPU (Neural Processing Unit):** Dedicated hardware for AI tasks, offering high efficiency for specific workloads like background blur, noise cancellation, and accelerating AI frameworks that leverage it (e.g., OpenVINO, Windows Studio Effects). Measured in TOPS (Tera Operations Per Second).
+* **Integrated GPU (iGPU):** Crucial for offloading layers of Large Language Models (LLMs) and for image generation (e.g., Stable Diffusion). Performance varies greatly by model.
+* **CPU:** Can run LLMs entirely, especially smaller ones or quantized versions, but generally slower than leveraging an iGPU or NPU where applicable.
+* **RAM:** Essential for loading LLM models into memory. More RAM allows for larger models and better iGPU performance (as iGPUs use system RAM as VRAM).
+
+---
